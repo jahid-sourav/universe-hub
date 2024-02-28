@@ -70,7 +70,7 @@ const showDetails = (tool) => {
   const detailsContent = document.querySelector(".details-content");
   detailsContent.innerHTML = `
         <img src="${
-          tool.image_link
+          tool.image_link[0]
             ? tool.image_link[0]
             : "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
         }" class="rounded mt-5 w-1/2 mx-auto">
