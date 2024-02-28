@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="container mx-auto p-2">
+      <h2 class="text-center font-bold text-2xl text-black">AI Universe Hub</h2>
+      <div
+        class="content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"
+      ></div>
+      <!-- modal.showModal() -->
+      <dialog id="modal" class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+          <form method="dialog">
+            <button
+              class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
+              ✕
+            </button>
+          </form>
+          <div class="details-content"></div>
+        </div>
+      </dialog>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
