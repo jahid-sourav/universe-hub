@@ -120,48 +120,7 @@ const showDetails = (tool) => {
             }
         </p>
         <h2>Features : </h2>
-            <li>
-            ${
-              tool.features["1"].feature_name
-                ? tool.features["1"].feature_name
-                : "No data Found"
-            }
-            </li>
-            <li>
-            ${
-              tool.features["1"].description
-                ? tool.features["1"].description
-                : "No data Found"
-            }
-            </li>
-            <li>
-            ${
-              tool.features["2"].feature_name
-                ? tool.features["2"].feature_name
-                : "No data Found"
-            }
-            </li>
-            <li>
-            ${
-              tool.features["2"].description
-                ? tool.features["2"].description
-                : "No data Found"
-            }
-            </li>
-            <li>
-            ${
-              tool.features["3"].feature_name
-                ? tool.features["3"].feature_name
-                : "No data Found"
-            }
-            </li>
-            <li>
-            ${
-              tool.features["3"].description
-                ? tool.features["3"].description
-                : "No data Found"
-            }
-            </li>
+        ${tool.features ? Object.entries(tool.features).map(([key, value]) => `<li>${value.feature_name}</li> <p>${value.description}</p>`).join('') : 'No Data Found!'}   
         <h2>Integrations - </h2>
         ${
           tool.integrations
