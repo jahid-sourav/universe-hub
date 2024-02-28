@@ -23,11 +23,7 @@ const displayData = (tools) => {
       "border-opacity-50"
     );
     div.innerHTML = `
-        <img src="${
-          tool.image
-            ? tool.image
-            : "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
-        }" alt="Image" class="rounded">
+        <img src="${tool.image ? tool.image : 'https://s3.amazonaws.com/images.seroundtable.com/bing-indexing-issues-1603799404.jpg'}" alt="Image" class="rounded">
         <h2 class="my-2 font-bold text-xl">Features</h2>
         
         <ul class="mb-2">
@@ -160,3 +156,14 @@ const showDetails = (tool) => {
 };
 
 loadData();
+
+
+/*
+Project Name - Universe Hub
+Problems -
+01. Image Issue (API)
+
+Project Name - Mobile Hunting
+Problems -
+01. Show All Button is not Showing (JS Issue)
+*/ 
